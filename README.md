@@ -17,7 +17,7 @@ default/scratch1    10GB                                    active
 $
 ```
 
-Naturally that's a lot to type. An alias might help.
+That's a lot to type for something that's meant to be a shortcut. An alias might help.
 
 ```
 $ alias stcli='docker run andrelucas/stcli'
