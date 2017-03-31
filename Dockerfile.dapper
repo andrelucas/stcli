@@ -1,0 +1,13 @@
+FROM alpine:latest
+
+ENV GOPATH=/go
+ENV PATH=${GOPATH}/bin:$PATH
+RUN apk add --no-cache git go libc-dev
+
+ENV DAPPER_SOURCE /source/
+ENV DAPPER_OUTPUT storageos
+WORKDIR ${DAPPER_SOURCE}
+
+RUN mkdir -p ${DAPPER_SOURCE}
+
+ENTRYPOINT ["./build.sh"]
