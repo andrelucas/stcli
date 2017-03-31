@@ -40,7 +40,7 @@ $ dapper
 
 This uses Docker to build the binary, via the excellent [Dapper](https://github.com/rancher/dapper) tool from Rancher.
 
-Then, package just the binary into a minimal container:
+Then, package just the binary into a minimal Alpine image:
 
 ```
 $ docker build --rm -t myid/stcli:latest .
