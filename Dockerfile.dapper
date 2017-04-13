@@ -6,6 +6,8 @@ RUN apk add --no-cache git go libc-dev
 
 ENV DAPPER_SOURCE /source/
 ENV DAPPER_OUTPUT storageos
+ENV SHELL /bin/sh
+
 WORKDIR ${DAPPER_SOURCE}
 
 RUN mkdir -p ${DAPPER_SOURCE}
