@@ -18,5 +18,5 @@ push:
 clean:
 	rm -f storageos
 
-distclean:
+distclean: clean
 	docker rmi $(IMAGE):$(TAG)
